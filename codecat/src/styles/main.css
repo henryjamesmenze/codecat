@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* === TAILWIND & BASE === */
+@import "tailwindcss";
+
+* {
+  font-family: "Merriweather", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* === SMOOTH SCROLLING === */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll snap para secciones completas */
+section {
+  scroll-snap-align: start;
+}
+
+/* === NAVBAR === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(16, 16, 16, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e398b7;
+  font-size: 1.2rem;
+  transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.7;
+}
+
+#logo {
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* === ACCESIBILIDAD === */
+a:focus,
+button:focus,
+iframe:focus {
+  outline: 2px solid #e398b7;
+  outline-offset: 2px;
+}
+
+/* === INFINITE CAROUSEL ANIMATIONS === */
+@keyframes scroll-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-infinite-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-infinite {
+  animation: scroll-infinite 30s linear infinite;
+}
+
+.animate-scroll-infinite-reverse {
+  animation: scroll-infinite-reverse 30s linear infinite;
+}
+
+.animate-scroll-infinite:hover,
+.animate-scroll-infinite-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Reducir movimiento para usuarios que lo prefieran */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+  
+  .animate-scroll-infinite,
+  .animate-scroll-infinite-reverse {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,184 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Proyectos - CodeCat" description="Descubre nuestros proyectos y trabajos realizados">
+    <Navbar />
+    
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="min-h-[40vh] flex items-center justify-center px-4 py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate__animated animate__fadeInDown" style="color: #e398b7;">
+                    Nuestros Proyectos
+                </h1>
+                <p class="text-xl md:text-2xl animate__animated animate__fadeInUp" style="color: white;">
+                    Explora los trabajos que hemos desarrollado con pasión y dedicación
+                </p>
+            </div>
+        </section>
+
+        <!-- Proyectos Section -->
+        <section class="min-h-screen px-4 py-20">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+                    
+                    <!-- Proyecto 1 -->
+                    <div class="rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="aspect-video bg-gradient-to-br from-purple-900 to-pink-900 flex items-center justify-center flex-shrink-0">
+                            <img 
+                                src="./calculadora.png" 
+                                alt="Proyecto 1" 
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            >
+                            <div class="hidden w-full h-full items-center justify-center">
+                                <span class="text-6xl" style="color: #e398b7;">💻</span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Calculadora de relaciones de recurrencias lineales</h3>
+                            <p class="text-base leading-relaxed mb-6 flex-grow" style="color: white;">
+                                Desarrollo de una calculadora para resolver ejercicios de recurrencias lineales homogeneas de segundo orden
+                            </p>
+                            <div class="flex gap-4">
+                                <a 
+                                    href="https://recurrenciascalc.netlify.app/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex-1 text-center px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105"
+                                    style="background-color: #e398b7; color: #101010;"
+                                >
+                                    Ver Proyecto
+                                </a>
+                                <a 
+                                    href="https://github.com/henryjamesmenze/calculadora.git" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105"
+                                    style="background-color: #150f40; color: #e398b7;"
+                                    aria-label="Ver repositorio en GitHub"
+                                >
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="aspect-video bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center flex-shrink-0">
+                            <img 
+                                src="./grafico.png" 
+                                alt="Proyecto 2" 
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            >
+                            <div class="hidden w-full h-full items-center justify-center">
+                                <span class="text-6xl" style="color: #e398b7;">🎨</span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Generador de graficos basado en datos CSV</h3>
+                            <p class="text-base leading-relaxed mb-6 flex-grow" style="color: white;">
+                                Generador de gráficos dinámicos a partir de archivos CSV cargados por el usuario
+                            </p>
+                            <div class="flex gap-4">
+                                <a 
+                                    href="https://getgraph.netlify.app/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex-1 text-center px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105"
+                                    style="background-color: #e398b7; color: #101010;"
+                                >
+                                    Ver Proyecto
+                                </a>
+                                <a 
+                                    href="https://github.com/henryjamesmenze/projectSemillero.git" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105"
+                                    style="background-color: #150f40; color: #e398b7;"
+                                    aria-label="Ver repositorio en GitHub"
+                                >
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="aspect-video bg-gradient-to-br from-green-900 to-teal-900 flex items-center justify-center flex-shrink-0">
+                            <img 
+                                src="./ecommerce.png" 
+                                alt="Proyecto 3" 
+                                class="w-full h-full object-cover"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                            >
+                            <div class="hidden w-full h-full items-center justify-center">
+                                <span class="text-6xl" style="color: #e398b7;">📱</span>
+                            </div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Desarollo E-commerce</h3>
+                            <p class="text-base leading-relaxed mb-6 flex-grow" style="color: white;">
+                                Web para una E-commerce de productos tecnologicos
+                            </p>
+                            <div class="flex gap-4">
+                                <a 
+                                    href="#" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex-1 text-center px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105"
+                                    style="background-color: #e398b7; color: #101010;"
+                                >
+                                    Soon...
+                                </a>
+                                <a 
+                                    href="https://github.com/sn4yber/PR-Ecomeerse-carlosDev-comunity.git" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center px-4 py-2 rounded-lg font-semibold transition-all hover:scale-105"
+                                    style="background-color: #150f40; color: #e398b7;"
+                                    aria-label="Ver repositorio en GitHub"
+                                >
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-16 px-4 text-center" style="background-color: #150f40;">
+        <div class="max-w-4xl mx-auto">
+            <a 
+                href="https://www.tiktok.com/@codecat58" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Visita nuestro TikTok" 
+                class="inline-block text-6xl mb-6 transition-all duration-300 hover:scale-110"
+                style="color: white;"
+            >
+                <i class="bi bi-tiktok" aria-hidden="true"></i>
+            </a>
+            <p class="text-base mb-2" style="color: white;">
+                En CodeCat siempre estamos disponibles para ofrecer nuestros servicios.
+            </p>
+            <p class="text-base" style="color: white;">
+                © 2024 - 2025 CodeCat. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+</Layout>

@@ -1,0 +1,499 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<Layout title="CodeCat - Inicio">
+    <Navbar />
+
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center px-4 py-20">
+            <div class="max-w-7xl mx-auto w-full">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div class="flex-1 text-center md:text-left animate__animated animate__backInDown">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight" style="color: #e398b7;">
+                            Crea tu sitio web eficiente y en poco tiempo con nosotros
+                        </h1>
+                        <!-- 
+                        <button 
+                            type="button" 
+                            class="px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                            style="background-color: #150f40; color: #e398b7;"
+                            aria-label="Contactar con un asesor de CodeCat"
+                        >
+                            Contacta un asesor
+                        </button>-->
+                    </div>
+                    <div class="flex-1 flex justify-center">
+                        <img 
+                            src="./cat.png" 
+                            alt="Mascota de CodeCat - Gato programador" 
+                            class="w-full max-w-md h-auto"
+                            loading="eager" 
+                            width="400" 
+                            height="400"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ¿Por qué CodeCat? Section -->
+        <section class="flex items-center justify-center px-4 py-12" id="info-section" aria-labelledby="why-codecat">
+            <div class="max-w-7xl mx-auto w-full">
+                <h2 id="why-codecat" class="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-10 " style="color: #e398b7;">
+                    ¿Por qué CodeCat?
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="rounded-2xl p-6" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0">
+                                <img 
+                                    src="./security.png" 
+                                    class="w-12 h-12 object-contain" 
+                                    alt="Icono de seguridad web" 
+                                    loading="lazy" 
+                                    width="170" 
+                                    height="170"
+                                >
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Te garantizamos seguridad</h3>
+                                <p class="text-base leading-relaxed" style="color: white;">
+                                    Desde el momento que nos eliges, ya estás seguro con nosotros. Tus datos, identidad y contacto son clave para nosotros. <strong>¡Tu seguridad, nuestra prioridad!</strong> Anímate a elegirnos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="rounded-2xl p-6" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0">
+                                <img 
+                                    src="./asesor.png" 
+                                    class="w-12 h-12 object-contain" 
+                                    alt="Icono de asesor" 
+                                    loading="lazy" 
+                                    width="160" 
+                                    height="160"
+                                >
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Te ofrecemos asesoría inmediata</h3>
+                                <p class="text-base leading-relaxed" style="color: white;">
+                                    En cualquier momento que necesites asesoría tendrás a tu disposición un asesor comercial para resolver tus dudas y un líder de desarrollo para dar soporte a tu sitio cuando sea necesario.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="rounded-2xl p-6" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0">
+                                <img 
+                                    src="./web.png" 
+                                    class="w-12 h-12 object-contain" 
+                                    alt="Icono de desarrollo web" 
+                                    loading="lazy" 
+                                    width="160" 
+                                    height="160"
+                                >
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Te ofrecemos páginas intuitivas</h3>
+                                <p class="text-base leading-relaxed" style="color: white;">
+                                    Las tecnologías usadas permitirán editar hasta el más mínimo detalle. Tecnologías usadas por grandes marcas en todo el mundo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestros Servicios Section -->
+        <section class="min-h-screen flex items-center justify-center px-4 py-20" aria-labelledby="services-title">
+            <div class="max-w-7xl mx-auto w-full">
+                <div class="text-center mb-20">
+                    <h2 id="services-title" class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" style="color: #e398b7;">
+                        Nuestros Servicios
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto" style="color: rgba(227, 152, 183, 0.8);">
+                        Soluciones digitales integrales diseñadas para llevar tu negocio al siguiente nivel
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12">
+                    <!-- Desarrollo de Páginas Web -->
+                    <div class="group relative rounded-3xl p-10 transition-all duration-500 hover:transform hover:-translate-y-2" 
+                         style="background-color: rgba(21, 15, 64, 0.6); border: 1px solid rgba(227, 152, 183, 0.3); backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(227, 152, 183, 0.1);">
+                        <div class="absolute top-8 right-8 text-6xl font-bold opacity-10" style="color: #e398b7;">01</div>
+                        <div class="flex items-start gap-6 relative z-10">
+                            <div class="shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110" style="background-color: rgba(227, 152, 183, 0.2);">
+                                <svg class="w-8 h-8" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4" style="color: #e398b7;">Desarrollo Web</h3>
+                                <p class="text-base md:text-lg leading-relaxed mb-4" style="color: rgba(255, 255, 255, 0.9);">
+                                    Creamos sitios web modernos, rápidos y escalables utilizando las últimas tecnologías del mercado para impulsar tu negocio en el mundo digital.
+                                </p>
+                                <ul class="space-y-2 text-sm md:text-base" style="color: rgba(227, 152, 183, 0.8);">
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Responsive Design
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Optimización SEO
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Alto Rendimiento
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Diseño de Páginas Web -->
+                    <div class="group relative rounded-3xl p-10 transition-all duration-500 hover:transform hover:-translate-y-2" 
+                         style="background-color: rgba(21, 15, 64, 0.6); border: 1px solid rgba(227, 152, 183, 0.3); backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(227, 152, 183, 0.1);">
+                        <div class="absolute top-8 right-8 text-6xl font-bold opacity-10" style="color: #e398b7;">02</div>
+                        <div class="flex items-start gap-6 relative z-10">
+                            <div class="shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110" style="background-color: rgba(227, 152, 183, 0.2);">
+                                <svg class="w-8 h-8" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4" style="color: #e398b7;">Diseño UI/UX</h3>
+                                <p class="text-base md:text-lg leading-relaxed mb-4" style="color: rgba(255, 255, 255, 0.9);">
+                                    Diseñamos interfaces atractivas e intuitivas que capturan la esencia de tu marca y ofrecen una experiencia excepcional a tus usuarios.
+                                </p>
+                                <ul class="space-y-2 text-sm md:text-base" style="color: rgba(227, 152, 183, 0.8);">
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Diseño Centrado en Usuario
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Prototipado Interactivo
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Identidad Visual
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Análisis de Datos -->
+                    <div class="group relative rounded-3xl p-10 transition-all duration-500 hover:transform hover:-translate-y-2" 
+                         style="background-color: rgba(21, 15, 64, 0.6); border: 1px solid rgba(227, 152, 183, 0.3); backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(227, 152, 183, 0.1);">
+                        <div class="absolute top-8 right-8 text-6xl font-bold opacity-10" style="color: #e398b7;">03</div>
+                        <div class="flex items-start gap-6 relative z-10">
+                            <div class="shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110" style="background-color: rgba(227, 152, 183, 0.2);">
+                                <svg class="w-8 h-8" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4" style="color: #e398b7;">Análisis de Datos</h3>
+                                <p class="text-base md:text-lg leading-relaxed mb-4" style="color: rgba(255, 255, 255, 0.9);">
+                                    Transformamos tus datos en información valiosa para tomar decisiones estratégicas que impulsen el crecimiento de tu empresa.
+                                </p>
+                                <ul class="space-y-2 text-sm md:text-base" style="color: rgba(227, 152, 183, 0.8);">
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Business Intelligence
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Visualización de Datos
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Reportes Personalizados
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Aplicaciones Móviles -->
+                    <div class="group relative rounded-3xl p-10 transition-all duration-500 hover:transform hover:-translate-y-2" 
+                         style="background-color: rgba(21, 15, 64, 0.6); border: 1px solid rgba(227, 152, 183, 0.3); backdrop-filter: blur(10px); box-shadow: 0 8px 32px rgba(227, 152, 183, 0.1);">
+                        <div class="absolute top-8 right-8 text-6xl font-bold opacity-10" style="color: #e398b7;">04</div>
+                        <div class="flex items-start gap-6 relative z-10">
+                            <div class="shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110" style="background-color: rgba(227, 152, 183, 0.2);">
+                                <svg class="w-8 h-8" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl md:text-3xl font-bold mb-4" style="color: #e398b7;">Apps Móviles</h3>
+                                <p class="text-base md:text-lg leading-relaxed mb-4" style="color: rgba(255, 255, 255, 0.9);">
+                                    Desarrollamos aplicaciones móviles nativas y multiplataforma que conectan tu negocio con tus clientes en cualquier momento y lugar.
+                                </p>
+                                <ul class="space-y-2 text-sm md:text-base" style="color: rgba(227, 152, 183, 0.8);">
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        iOS & Android
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Apps Nativas
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="w-1.5 h-1.5 rounded-full" style="background-color: #e398b7;"></span>
+                                        Cross-Platform
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades Section -->
+        <section class="min-h-screen flex items-center justify-center px-4 py-20" aria-labelledby="skills-title">
+            <div class="w-full">
+                <h2 id="skills-title" class="text-4xl md:text-5xl font-bold text-center mb-16" style="color: #e398b7;">
+                    Habilidades
+                </h2>
+                
+                <!-- Tecnologías Web -->
+                <div class="mb-12">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-center mb-6" style="color: #e398b7;">Tecnologías Web</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 justify-items-center">
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-html5-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">HTML5</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-css3-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">CSS3</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-javascript-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">JavaScript</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-typescript-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">TypeScript</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-react-original colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">React</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-astro-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">Astro</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-tailwindcss-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">Tailwind</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-sass-original colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">Sass</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="mb-12">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-center mb-6" style="color: #e398b7;">Bases de Datos</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-items-center">
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-mongodb-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">MongoDB</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-mysql-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">MySQL</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-postgresql-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas y Control de Versiones -->
+                <div class="mb-12">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-center mb-6" style="color: #e398b7;">Herramientas & Control de Versiones</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-git-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">Git</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-github-original text-8xl mb-3" style="color: #e398b7;" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">GitHub</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-vscode-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">VS Code</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-npm-original-wordmark colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">NPM</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center">
+                            <i class="devicon-figma-plain colored text-8xl mb-3" aria-hidden="true"></i>
+                            <span class="text-lg font-semibold" style="color: #e398b7;">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Importancia Web Section -->
+        <section class="min-h-screen flex items-center justify-center px-4 py-20" aria-labelledby="importance-title">
+            <div class="max-w-7xl mx-auto w-full">
+                <h2 id="importance-title" class="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4" style="color: #e398b7;">
+                    La importancia de tener una página web
+                </h2>
+                <p class="text-2xl md:text-3xl text-center mb-12" style="color: #e398b7;">en tu negocio</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <!-- Beneficio 1 -->
+                    <div class="rounded-2xl p-8" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0">
+                                <svg class="w-12 h-12" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Presencia Global 24/7</h3>
+                                <p class="text-base leading-relaxed" style="color: white;">
+                                    Tu negocio estará disponible las 24 horas del día, los 7 días de la semana. Los clientes pueden conocer tus productos y servicios en cualquier momento, desde cualquier lugar del mundo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beneficio 2 -->
+                    <div class="rounded-2xl p-8" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0">
+                                <svg class="w-12 h-12" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Mayor Alcance de Clientes</h3>
+                                <p class="text-base leading-relaxed" style="color: white;">
+                                    El 97% de los consumidores buscan productos y servicios en línea antes de comprar. Sin una página web, estás perdiendo oportunidades de negocio todos los días.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beneficio 3 -->
+                    <div class="rounded-2xl p-8" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0">
+                                <svg class="w-12 h-12" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Credibilidad y Confianza</h3>
+                                <p class="text-base leading-relaxed" style="color: white;">
+                                    Una página web profesional aumenta la credibilidad de tu negocio. El 75% de los usuarios juzgan la credibilidad de una empresa basándose en el diseño de su sitio web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beneficio 4 -->
+                    <div class="rounded-2xl p-8" style="background-color: rgba(227, 152, 183, 0.1); border: 2px solid #e398b7;">
+                        <div class="flex items-start gap-4">
+                            <div class="shrink-0">
+                                <svg class="w-12 h-12" style="color: #e398b7;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold mb-3" style="color: #e398b7;">Rentabilidad y ROI</h3>
+                                <p class="text-base leading-relaxed" style="color: white;">
+                                    Una página web es más económica que una tienda física y puede generar ventas las 24 horas. Es la herramienta de marketing con mejor retorno de inversión.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estadísticas -->
+                <div class="rounded-3xl p-8 md:p-12 mb-12" style="background: linear-gradient(135deg, #150f40 0%, #1f1560 100%);">
+                    <h3 class="text-3xl md:text-4xl font-bold text-center mb-8" style="color: #e398b7;">
+                        Datos que hablan por sí solos
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div>
+                            <div class="text-5xl md:text-6xl font-bold mb-2" style="color: #e398b7;">71%</div>
+                            <p class="text-lg" style="color: white;">de las pequeñas empresas ya tienen página web</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl md:text-6xl font-bold mb-2" style="color: #e398b7;">88%</div>
+                            <p class="text-lg" style="color: white;">de los consumidores investigan online antes de comprar</p>
+                        </div>
+                        <div>
+                            <div class="text-5xl md:text-6xl font-bold mb-2" style="color: #e398b7;">24/7</div>
+                            <p class="text-lg" style="color: white;">tu negocio estará abierto sin descanso</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="text-center">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6" style="color: #e398b7;">
+                        ¡Síguenos en TikTok para más consejos!
+                    </h3>
+                    <a 
+                        href="https://www.tiktok.com/@codecat58" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-3 px-8 py-4 rounded-full text-xl font-bold transition-all hover:scale-105 hover:shadow-xl"
+                        style="background-color: #150f40; color: #e398b7;"
+                    >
+                        <i class="bi bi-tiktok text-3xl"></i>
+                        Ver en TikTok
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-16 px-4 text-center" style="background-color: #150f40;">
+        <div class="max-w-4xl mx-auto">
+            <a 
+                href="https://www.tiktok.com/@codecat58" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                aria-label="Visita nuestro TikTok" 
+                class="inline-block text-6xl mb-6 transition-all duration-300 hover:scale-110"
+                style="color: white;"
+            >
+                <i class="bi bi-tiktok" aria-hidden="true"></i>
+            </a>
+            <p class="text-base mb-2" style="color: white;">
+                En CodeCat siempre estamos disponibles para ofrecer nuestros servicios.
+            </p>
+            <p class="text-base" style="color: white;">
+                © 2024 - 2025 CodeCat. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+</Layout>
